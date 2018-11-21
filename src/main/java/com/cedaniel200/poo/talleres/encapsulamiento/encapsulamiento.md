@@ -1,7 +1,7 @@
 # Encapsulamiento
 
 ## Objetivo: 
-Conocer y entender la capcidad de los objetos de ocultar su
+Conocer y entender la capacidad de los objetos de ocultar su
 estado y comportamiento.
 
 ## Descripción:
