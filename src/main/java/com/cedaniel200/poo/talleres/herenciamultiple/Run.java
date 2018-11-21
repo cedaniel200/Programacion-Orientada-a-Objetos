@@ -1,6 +1,5 @@
 package com.cedaniel200.poo.talleres.herenciamultiple;
 
-import com.cedaniel200.curso.grupo.talleres.herenciamultiple.ejercicio.*;
 import com.cedaniel200.poo.talleres.herenciamultiple.solucion.*;
 
 import static com.cedaniel200.poo.talleres.herenciamultiple.solucion.Log.imprimir;
