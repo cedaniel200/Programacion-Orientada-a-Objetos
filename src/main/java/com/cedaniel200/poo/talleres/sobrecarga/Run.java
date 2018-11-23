@@ -1,7 +1,7 @@
 package com.cedaniel200.poo.talleres.sobrecarga;
 
-import com.cedaniel200.poo.talleres.sobrecarga.solucionejercicio1.Bus;
-import com.cedaniel200.poo.talleres.sobrecarga.solucionejercicio2.Suma;
+import com.cedaniel200.poo.talleres.sobrecarga.constructores.Bus;
+import com.cedaniel200.poo.talleres.sobrecarga.metodos.Suma;
 
 public class Run {
     public static void main(String[] args) {

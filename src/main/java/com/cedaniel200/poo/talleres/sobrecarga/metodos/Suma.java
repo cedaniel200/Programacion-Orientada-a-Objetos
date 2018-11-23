@@ -1,4 +1,4 @@
-package com.cedaniel200.poo.talleres.sobrecarga.solucionejercicio2;
+package com.cedaniel200.poo.talleres.sobrecarga.metodos;
 
 import java.util.Arrays;
 

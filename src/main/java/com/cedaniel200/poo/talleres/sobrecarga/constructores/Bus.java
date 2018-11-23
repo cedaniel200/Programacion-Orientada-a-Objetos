@@ -1,4 +1,4 @@
-package com.cedaniel200.poo.talleres.sobrecarga.solucionejercicio1;
+package com.cedaniel200.poo.talleres.sobrecarga.constructores;
 
 public class Bus {
     private String chofer;
