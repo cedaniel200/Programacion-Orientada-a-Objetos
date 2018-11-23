@@ -1,4 +1,4 @@
-package com.cedaniel200.poo.talleres.diseno.solucionpasoapaso;
+package com.cedaniel200.poo.talleres.diseno.ventiladores;
 
 public interface Ventilador {
     void encender(Velocidad velocidad);

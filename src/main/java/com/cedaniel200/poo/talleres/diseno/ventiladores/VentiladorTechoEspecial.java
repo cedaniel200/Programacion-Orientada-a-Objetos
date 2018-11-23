@@ -1,6 +1,6 @@
-package com.cedaniel200.poo.talleres.diseno.solucionpasoapaso;
+package com.cedaniel200.poo.talleres.diseno.ventiladores;
 
-import static com.cedaniel200.poo.talleres.diseno.solucionpasoapaso.Ventilador.imprimir;
+import static com.cedaniel200.poo.talleres.diseno.ventiladores.Ventilador.imprimir;
 
 public class VentiladorTechoEspecial extends VentiladorTecho {
 

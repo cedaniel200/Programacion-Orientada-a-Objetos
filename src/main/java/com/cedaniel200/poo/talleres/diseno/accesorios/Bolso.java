@@ -1,4 +1,4 @@
-package com.cedaniel200.poo.talleres.diseno.solucionbasico;
+package com.cedaniel200.poo.talleres.diseno.accesorios;
 
 public abstract class Bolso implements Cartera {
 

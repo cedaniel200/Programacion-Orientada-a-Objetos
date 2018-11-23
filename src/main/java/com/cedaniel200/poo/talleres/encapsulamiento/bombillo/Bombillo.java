@@ -1,4 +1,4 @@
-package com.cedaniel200.poo.talleres.encapsulamiento.solucion;
+package com.cedaniel200.poo.talleres.encapsulamiento.bombillo;
 
 public class Bombillo {
 
