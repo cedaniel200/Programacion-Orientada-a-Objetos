@@ -31,10 +31,7 @@ hs_err_pid*
 
 # Gradle
 /.gradle/
-/gradle/
 /build/
-gradlew.bat
-gradlew
 
 # Eclipse
 .classpath
