@@ -66,6 +66,9 @@ comportamiento en dos interfaces.
 4. `Gepetto` ya no tiene una instancia de `Pinocho`: declara una variable de tipo `Titere` y añade
    `setTitere(Titere titere)`. En un espectáculo de títeres, un titiritero puede cambiar continuamente
    de títere.
+
+> Antes de leer el último paso, piensa la respuesta: ¿dónde deberían ir las interfaces?
+
 5. Decide dónde van las interfaces. De su ubicación depende que se logre o no la inversión de
    dependencia: deben ir en el **componente de alto nivel**.
 
