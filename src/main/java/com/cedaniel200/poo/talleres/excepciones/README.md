@@ -1,30 +1,23 @@
 # Excepciones
 
-Una excepción es un evento, que ocurre durante la ejecución de un 
-programa, que interrumpe el flujo normal de las instrucciones del 
-programa. 
+Una excepción es un evento que ocurre durante la ejecución de un programa y que interrumpe el flujo
+normal de sus instrucciones.
 
 ## El requisito de captura o especificación
 
-Java válido debe cumplir con el requisito de captura o especificación.
-Esto significa que el código que podría generar ciertas excepciones 
-debe estar incluido por uno de los siguientes:
+El código Java válido debe cumplir el requisito de captura o especificación: el código que podría
+generar ciertas excepciones debe estar cubierto por una de estas dos opciones.
 
-*   Una declaración try que atrapa la excepción. try debe 
-proporcionar un controlador para la excepción (catch).
+- Una declaración `try` que atrape la excepción. El `try` debe proporcionar un manejador para la
+  excepción (`catch`).
+- Un método que especifique que puede lanzar la excepción. El método debe proporcionar una cláusula
+  `throws` que enumere la excepción o excepciones que puede lanzar.
 
-*   Un método que especifica que puede lanzar la excepción. 
-El método debe proporcionar una cláusula throws  que enumera la 
-excepción o excepciones que puede lanzar el método. 
+El código que no cumple este requisito no compila.
 
-El código que no cumple con el requisito de captura o especificación 
-no se compilará.
+No todas las excepciones están sujetas al requisito. Para entender por qué hay que mirar las tres
+categorías básicas, de las cuales solo una está sujeta:
 
-No todas las excepciones están sujetas al requisito de captura o 
-especificación. Para entender por qué, debemos observar las tres 
-categorías básicas de excepciones, de las cuales solo una está 
-sujeta al Requisito.
-
-1)  **Excepción comprobada (checked exception)**
-2)  **Error**
-3)  **Excepción de tiempo de ejecución (RuntimeException)**
+1. [Excepción comprobada (*checked exception*)](checkedexception/README.md)
+2. [Error](error/README.md)
+3. [Excepción de tiempo de ejecución (*RuntimeException*)](runtimeexception/README.md)

@@ -1,16 +1,26 @@
-# Excepción comprobada (checked exception) 
+# Excepción comprobada (*checked exception*)
 
-Estas son condiciones excepcionales que una aplicación bien escrita 
-debe anticipar y recuperar. Las excepciones comprobadas están sujetas 
-al requisito de captura o especificación. 
+## Qué es
 
-Todas las excepciones son excepciones verificadas, excepto aquellas 
-indicadas por Error, RuntimeException y sus subclases.
+Son condiciones excepcionales que una aplicación bien escrita debe anticipar y de las que debe
+recuperarse. Las excepciones comprobadas están sujetas al requisito de captura o especificación.
 
-## Ejemplos
+Todas las excepciones son comprobadas, excepto las indicadas por `Error`, `RuntimeException` y sus
+subclases.
 
-La clase **Lector** nos muestra un ejemplo de como un método debe especificar 
-la excepción o excepciones que pueda lanzar en caso de no capturarla. 
- 
-La clase **Escritor** nos muestra un ejemplo de como un método puede capturar 
-una excepción.
+## Ejemplo
+
+- **`Lector`** muestra cómo un método debe especificar, con `throws`, la excepción o excepciones que
+  puede lanzar si no las captura.
+- **`Escritor`** muestra cómo un método puede capturar una excepción.
+
+## Para ejecutarlo
+
+```bash
+./gradlew build
+java -cp build/classes/java/main com.cedaniel200.poo.talleres.excepciones.checkedexception.Run
+```
+
+## Ver también
+
+[Volver a excepciones](../README.md)

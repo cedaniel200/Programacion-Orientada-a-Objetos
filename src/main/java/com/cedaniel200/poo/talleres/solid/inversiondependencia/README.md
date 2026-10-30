@@ -1,38 +1,88 @@
-Imaginemos estamos viendo el espectáculo de Gepetto y Pinocho y decidimos recrearlo en una pequeña aplicación.
+# Inversión de dependencias: Gepetto y Pinocho
 
-Para empezar con nuestra aplicación debemos hacernos un par de preguntas.
-¿Quien conoce como manipular un títere?, ¿Quien realiza la acción?. Es claro que quien sabe como manipular un títere es Gepetto y quien realiza la acción es Pinocho, solo con estas dos simples preguntas ya podemos hacernos una idea quien tiene las funciones de alto nivel y quien las de bajo nivel.
+## El problema
 
-Gepetto contiene las funciones de alto nivel (Es quien conoce las reglas del negocio y sabe como manipular un titere), cuales serian estas funciones.
+Imagina que vemos el espectáculo de Gepetto y Pinocho y decidimos recrearlo en una pequeña
+aplicación. Antes de escribir código conviene hacerse dos preguntas:
 
-    • void mostrarTitereInmovil();
-    • void moverCabezaDelTitere();
-    • void moverBrazoIzquierdoDelTitere();
-    • void moverBrazoDerechoDelTitere();
-    • void moverPiernaIzquierdoDelTitere();
-    • void moverPiernaDerechoDelTitere();
+- ¿Quién sabe cómo manipular un títere?
+- ¿Quién realiza la acción?
 
-Pinocho contiene las funciones de bajo nivel (Es quien simplemente realiza las acciones que Gepetto sabiamente le ordena), cuales serian estas funciones.
+Está claro que quien sabe manipular un títere es **Gepetto** y quien realiza la acción es **Pinocho**.
+Con esas dos preguntas ya podemos ver quién tiene las funciones de alto nivel y quién las de bajo
+nivel.
 
-    • void inmovil();
-    • void moverCabeza();
-    • void moverBrazoIzquierdo();
-    • void moverBrazoDerecho();
-    • void moverPiernaIzquierdo();
-    • void moverPiernaDerecho();
+## Responsabilidades
 
+### Alto nivel: el titiritero
 
-Para ilustrar esto tendremos dos componentes uno de alto nivel (donde estará Gepetto) y otra de bajo nivel (Donde estará Pinocho). A estas alturas es obvio que Gepetto debe tener una instancia de Pinocho para poder manipularlo.
+Gepetto conoce las reglas del negocio y sabe cómo manipular un títere:
 
-Es evidente a simple vista que el componente de alto nivel depende del componente de bajo nivel lo cual es un error, imaginemos que Pinocho sale a vacaciones y viene en su reemplazo Pepito Grillo, ¿Qué pasaría?, ¿Tendríamos que hacer cambios en nuestra aplicación?, es obvio que la respuesta es si, primero Gepetto no debería estar condicionado a trabajar con un solo títere, él es un titiritero y sabe manipular a cualquier títere que le pongan, por lo cual empiezo a evidenciar un problema de abstracción, una ultima consideración seria, y que tal que él que salga a vacaciones es Gepetto, podríamos crear un nuevo titiritero para Pinocho, es evidente que con el diseño actual no podríamos, por lo que vamos a hacer una mejor abstracción y mejorar considerablemente nuestro diseño e invirtiendo la dependencia.
+```java
+void mostrarTitereInmovil();
+void moverCabezaDelTitere();
+void moverBrazoIzquierdoDelTitere();
+void moverBrazoDerechoDelTitere();
+void moverPiernaIzquierdaDelTitere();
+void moverPiernaDerechaDelTitere();
+```
 
-Creo que ya nos dimos cuenta que los conceptos principales del dominio de la aplicación son Titiritero y Títere por lo que creo que deberíamos abstraer su comportamiento creando dos Interfaces y que estas contengan la declaración de las funciones ya mencionadas.
+### Bajo nivel: el títere
 
-Como segundo paso Gepetto debería implementar la interfaz Titiritero porque es claro que él es un titiritero.
+Pinocho simplemente ejecuta las acciones que Gepetto le ordena:
 
-El tercer paso consiste en que Pinocho implemente la interfaz Titere.
+```java
+void inmovil();
+void moverCabeza();
+void moverBrazoIzquierdo();
+void moverBrazoDerecho();
+void moverPiernaIzquierda();
+void moverPiernaDerecha();
+```
 
-Ahora Gepetto no debe tener una instancia de Pinocho sino declara una variable de clase de tipo Titere y es necesario entonces que los titiriteros tengan una función adicional setTitere(Titere titere) tengamos presente que en un espectáculo de títeres un titiritero puede cambiar contante mente de títere y creo que esta función le caería de mil maravillas.
+## La dependencia incorrecta
 
-Por ultimo viene la pregunta crucial donde deben ir estas interfaces porque de dicha ubicación dependen si se logra la inversión de dependencia o no.  Imagino que ya tienes la respuesta, si así es, deben ir en el componente de alto nivel.
-Nuestra aplicación ahora puede crecer de una forma más flexible, puedes crear más títeres y mas titiriteros si así lo deseas.
+La aplicación tendría dos componentes: uno de alto nivel (Gepetto) y otro de bajo nivel (Pinocho). A
+estas alturas es obvio que Gepetto necesita una instancia de Pinocho para poder manipularlo.
+
+Y ahí está el error: **el componente de alto nivel depende del de bajo nivel**. ¿Qué pasa si Pinocho se
+va de vacaciones y llega Pepito Grillo? Habría que cambiar la aplicación.
+
+Además, Gepetto no debería estar condicionado a trabajar con un solo títere: él es un titiritero y
+sabe manipular a cualquier títere que le pongan. Y si quien se va de vacaciones es Gepetto, con el
+diseño actual tampoco podríamos crear otro titiritero para Pinocho.
+
+## La solución: invertir la dependencia
+
+Los conceptos principales del dominio son **titiritero** y **títere**, así que conviene abstraer su
+comportamiento en dos interfaces.
+
+1. Crea las interfaces `Titiritero` y `Titere` con las funciones ya mencionadas.
+2. `Gepetto` implementa `Titiritero`, porque es un titiritero.
+3. `Pinocho` implementa `Titere`.
+4. `Gepetto` ya no tiene una instancia de `Pinocho`: declara una variable de tipo `Titere` y añade
+   `setTitere(Titere titere)`. En un espectáculo de títeres, un titiritero puede cambiar continuamente
+   de títere.
+5. Decide dónde van las interfaces. De su ubicación depende que se logre o no la inversión de
+   dependencia: deben ir en el **componente de alto nivel**.
+
+Ahora la aplicación puede crecer de forma más flexible: puedes crear más títeres y más titiriteros.
+
+## Estructura de la solución
+
+```text
+titiritero/
+├── capaaltonivel/    # Titiritero (interfaz), Titere (interfaz) y Gepetto
+├── capabajonivel/    # Pinocho
+└── Run.java
+```
+
+## Para ejecutarlo
+
+```bash
+./gradlew build
+java -cp build/classes/java/main com.cedaniel200.poo.talleres.solid.inversiondependencia.titiritero.Run
+```
+
+El programa es interactivo: muestra un menú, mueve el títere según la opción elegida y termina con
+`0`.

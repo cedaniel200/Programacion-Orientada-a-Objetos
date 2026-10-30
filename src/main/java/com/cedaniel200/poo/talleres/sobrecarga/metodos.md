@@ -1,14 +1,21 @@
-# Sobrecarga de Métodos
+# Sobrecarga de métodos
 
-## Ejercicio.
-*   Define una clase Suma. 
-*   Define un metodo que permita sumar dos numeros enteros.
-*   Define un metodo que permita sumar tres numeros enteros. 
-*   Define un metodo que permita sumar N-numeros enteros.
-*   Como ultimo reto intenta hacer el punto anterior
-utilizando una expresión lambda.
+## Objetivo
 
+Practicar la sobrecarga de métodos y, como reto final, resolver el mismo problema con una expresión
+lambda.
 
-## Nota:
-Te dejo una posible solución, puedes ejecutar el Run y ver que pasa, 
-pero mi consejo es que lo intentes primero.
+## Ejercicio
+
+1. Define una clase `Suma`.
+2. Define un método que permita sumar dos números enteros.
+3. Define un método que permita sumar tres números enteros.
+4. Define un método que permita sumar N números enteros.
+
+## Reto final
+
+Intenta resolver el último punto con una expresión lambda.
+
+## Solución
+
+[`metodos`](./metodos) contiene una posible solución. Conviene intentarlo primero.

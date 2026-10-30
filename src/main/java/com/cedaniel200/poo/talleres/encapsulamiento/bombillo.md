@@ -1,22 +1,23 @@
-# Encapsulamiento
+# Encapsulamiento: bombillo
 
-## Objetivo: 
-Conocer y entender la capacidad de los objetos de ocultar su
-estado y comportamiento.
+## Objetivo
 
-## Descripción:
+Conocer y entender la capacidad de los objetos de ocultar su estado y su comportamiento.
 
-Debes diseñar una clase llamada bombillo el cual debe poderse prender, apagar y conocer si esta prendido 
-o no.
+## Enunciado
 
-Se debe tener las siguientes consideraciones:
-* Prender: 
-    *   Antes de prender se debe conocer si esta prendido en ese caso no se debe hacer nada.
-    *   Si no esta prendido se debe cerrar el circuito, cargar el bombillo y por último prender. 
-* Apagar:
-    *   Antes de apagar se debe conocer si está apagado en ese caso no se debe hacer nada
-    *   Si no está apagado se debe abrir el circuito, descargar el bombillo y por último apagar el bombillo.
-    
+Debes diseñar una clase llamada `Bombillo` que se pueda prender, apagar y que permita conocer si está
+prendido o no.
 
-## Nota:
-Te dejo una posible solución, pero mi consejo es que lo intentes primero.
+## Requisitos
+
+- **Prender**
+  - Antes de prender se debe comprobar si ya está prendido; en ese caso no se hace nada.
+  - Si no está prendido, se cierra el circuito, se carga el bombillo y por último se prende.
+- **Apagar**
+  - Antes de apagar se debe comprobar si ya está apagado; en ese caso no se hace nada.
+  - Si no está apagado, se abre el circuito, se descarga el bombillo y por último se apaga.
+
+## Solución
+
+[`bombillo`](./bombillo) contiene una posible solución. Conviene intentarlo primero.

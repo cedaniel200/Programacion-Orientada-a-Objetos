@@ -1,16 +1,21 @@
-# Sobrecarga de Constructores
+# Sobrecarga de constructores
 
-## Ejercicio.
+## Objetivo
 
-*   Define una clase Bus considerando los siguientes atributos de clase: 
-chofer (String), ayudante (String), cupoMaximoPasajeros (int). 
-*   Define un constructor que reciba los parámetros necesarios para la 
-inicialización y otro constructor que no reciba parámetros. 
-*   Crea los métodos para poder establecer y obtener los valores de los atributos. 
-*   Compila el código para comprobar que no presenta errores.
-*   crea un objeto usando un constructor y luego otro objeto usando el otro constructor.
-*   Comprueba que se inicializan correctamente consultando el valor de sus atributos después de haber creado los objetos
+Practicar la sobrecarga de constructores y la inicialización de objetos.
 
-## Nota:
-Te dejo una posible solución, puedes ejecutar el Run y ver que pasa, pero mi consejo 
-es que lo intentes primero.
+## Ejercicio
+
+1. Define una clase `Bus` con estos atributos de clase: `chofer` (`String`), `ayudante` (`String`) y
+   `cupoMaximoPasajeros` (`int`).
+2. Define un constructor que reciba los parámetros necesarios para la inicialización y otro que no
+   reciba parámetros.
+3. Crea los métodos para establecer y obtener los valores de los atributos.
+4. Compila el código para comprobar que no presenta errores.
+5. Crea un objeto usando un constructor y después otro objeto usando el otro constructor.
+6. Comprueba que se inicializan correctamente consultando el valor de sus atributos después de haber
+   creado los objetos.
+
+## Solución
+
+[`constructores`](./constructores) contiene una posible solución. Conviene intentarlo primero.
