@@ -52,6 +52,9 @@ Además, Gepetto no debería estar condicionado a trabajar con un solo títere: 
 sabe manipular a cualquier títere que le pongan. Y si quien se va de vacaciones es Gepetto, con el
 diseño actual tampoco podríamos crear otro titiritero para Pinocho.
 
+En el fondo es un **problema de abstracción**: el diseño habla de clases concretas y no de lo que
+realmente son un titiritero y un títere.
+
 ## La solución: invertir la dependencia
 
 Los conceptos principales del dominio son **titiritero** y **títere**, así que conviene abstraer su
