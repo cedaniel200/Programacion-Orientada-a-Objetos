@@ -25,7 +25,7 @@ para su nuevo software, teniendo en cuenta las siguientes consideraciones.
 - Los bolsos pueden convertirse en bolso de mano.
 - Los compradores de maletines pueden agregar un compartimiento para portátil.
 
-## Correas
+### Información de última hora: las correas
 
 Justo antes de ponerte a diseñar llega una información nueva: la empresa decidió empezar con correas.
 Debes considerar que tienen un largo, que la hebilla puede girar (lo que permite usar la correa por
