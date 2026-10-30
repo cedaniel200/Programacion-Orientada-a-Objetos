@@ -1,32 +1,41 @@
-## Descripción
+# Accesorios de cuero
 
-Es el ingeniero de una prestigiosa empresa colombiana
-de accesorios de cuero y debes realizar un primer diseño
-para el nuevo software, por lo que debes tener en cuenta 
-las siguientes consideraciones
+## Objetivo
 
-* Todos los accesorios tienen una descripción, tienen instrucciones y por el momento son hechos
-en un tipo de cuero (Vaca-Becerro-Cerdo).
-* Por el momento la empresa solo fabrica bolsos y maletines
-pero sus creativos tienen muchas ideas para nuevos tipos de accesorios.
-* La empresa se caracteriza porque todos sus bolsos tienen la misma
-forma de abrirse y obviamente también de cerrarse.
-* Tanto en bolsos como en maletines se puede graduar el largo de 
-la correa, algunos diseños permiten correar mas largas que otros.
-*  Algunos maletines se abren solo soltando una correa, otros necesitan
-código de seguridad, y cada día salen diseños con forma de abrirse diferente.
-* Tanto Bolsos como maletines van dirigido a un publico especifico
-algunos son para Hombres, otros para mujeres y otros son unisex.
-* Los bolsos pueden cambiarse a bolso de mano
-* Los compradores de maletines pueden agregar un compartimiento para portatil
-* Justo antes de ponerse a diseñar te llega la siguiente información:
-    *   La empresa decidió empezar con correas por lo cual para ellas debes 
-    considerar que tienen un largo, es importante saber si la hebilla gira
-     permitiendo usar la correa por ambos lados y que cantidad de 
-    perforaciones tiene, todo esto dependerá del modelo. Por el momento no se conoce 
-    que modelos saldrán al mercado. 
-* Al finalizar te sientes inspirado y quieres crear tu propio diseño de bolso, 
-maletín y correa.
+Practicar abstracción, herencia e interfaces diseñando el modelo de una empresa de accesorios de
+cuero.
 
-## Nota:
-Te dejo una posible solución, pero mi consejo es que lo intentes primero.
+## Enunciado
+
+Eres el ingeniero de una prestigiosa empresa de accesorios de cuero y debes realizar un primer diseño
+para su nuevo software, teniendo en cuenta las siguientes consideraciones.
+
+## Requisitos
+
+- Todos los accesorios tienen una descripción y unas instrucciones, y por el momento se fabrican en un
+  tipo de cuero (vaca, becerro o cerdo).
+- La empresa solo fabrica bolsos y maletines, pero sus creativos tienen muchas ideas para nuevos tipos
+  de accesorios.
+- Todos los bolsos tienen la misma forma de abrirse y de cerrarse.
+- Tanto en bolsos como en maletines se puede graduar el largo de la correa; algunos diseños permiten
+  correas más largas que otros.
+- Algunos maletines se abren solo soltando una correa, otros necesitan código de seguridad, y cada día
+  salen diseños con una forma distinta de abrirse.
+- Bolsos y maletines van dirigidos a un público específico: hombres, mujeres o unisex.
+- Los bolsos pueden convertirse en bolso de mano.
+- Los compradores de maletines pueden agregar un compartimiento para portátil.
+
+### Información de última hora: las correas
+
+Justo antes de ponerte a diseñar llega una información nueva: la empresa decidió empezar con correas.
+Debes considerar que tienen un largo, que la hebilla puede girar (lo que permite usar la correa por
+ambos lados) y que tienen una cantidad de perforaciones. Todo depende del modelo, y por ahora no se
+conocen los modelos que saldrán al mercado.
+
+## Entregable
+
+Al finalizar, crea tu propio diseño de bolso, maletín y correa.
+
+## Solución
+
+[`accesorios`](./accesorios) contiene una posible solución. Conviene intentarlo primero.

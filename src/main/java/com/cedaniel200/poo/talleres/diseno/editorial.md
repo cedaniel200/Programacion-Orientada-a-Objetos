@@ -1,19 +1,32 @@
-## Descripción
+# Editorial
 
-Debes realizar un primer diseño para el nuevo software de una editorial.  A tener en cuenta: 
-*   La Editorial le publica a varias empresas, Libros o Periódicos.
-*   La Editorial se especializó en los tipos de libros (novelas, arte y guia).
-*   Tanto periódicos como libros pueden leerse según un número de página.
-*   Tanto periódicos como libros pueden paginar para lo que se requiere conocer la página actual 
-y última página, esto también les da la habilidad de pasar la página según un número de página. 
-*   Tanto los libros como los periódicos comparten la misma lógica al momento de pasar la página.
-*   Un libro debe permitir conocer su título, el tipo de libro que es, la dedicatoria, el índice de 
-contenido, los capítulos (tienen título y contenido) y nombre de autor(es).
-*   Un periódico debe permitir conocer su nombre, primera plana, lista de las demás planas (noticias).
-*   Una plana contiene un encabezado, una foto, un pie de foto, un titular de la noticia y la noticia.
+## Objetivo
 
-Al finalizar te sientes inspirado y quieres crear tu Libro llamado La vida de tu_nombre y el Periódico 
-llamado Te lo cuenta tu_nombre
+Modelar con abstracciones y herencia una editorial que publica libros y periódicos.
 
-## Nota:
-Te dejo una posible solución, pero mi consejo es que lo intentes primero.
+## Enunciado
+
+Debes realizar un primer diseño para el nuevo software de una editorial, teniendo en cuenta las
+siguientes consideraciones.
+
+## Requisitos
+
+- La editorial publica para varias empresas: libros o periódicos.
+- Está especializada en tipos de libro: novela, arte y guía.
+- Tanto periódicos como libros pueden leerse según un número de página.
+- Ambos pueden paginar, para lo que se requiere conocer la página actual y la última; eso también les
+  da la habilidad de pasar la página según un número.
+- Libros y periódicos comparten la misma lógica al momento de pasar la página.
+- Un libro debe permitir conocer su título, el tipo de libro, la dedicatoria, el índice de contenido,
+  los capítulos (con título y contenido) y el nombre del autor o autores.
+- Un periódico debe permitir conocer su nombre, su primera plana y la lista de las demás planas
+  (noticias).
+- Una plana contiene un encabezado, una foto, un pie de foto, un titular y la noticia.
+
+## Entregable
+
+Al finalizar, crea tu libro «La vida de tu_nombre» y tu periódico «Te lo cuenta tu_nombre».
+
+## Solución
+
+[`editorial`](./editorial) contiene una posible solución. Conviene intentarlo primero.

@@ -1,37 +1,42 @@
-# Encapsulamiento
+# Encapsulamiento: persona
 
-## Objetivo: 
-Conocer y entender la capacidad de los objetos de ocultar su
-estado y comportamiento.
+## Objetivo
 
-## Descripción:
+Conocer y entender la capacidad de los objetos de ocultar su estado y su comportamiento.
 
-Debes diseñar una clase llamada Persona el cual puede correr,  descansar, cumplir años y 
-conocer si está cansado o no. 
+## Enunciado
 
-Se debe tener las siguientes consideraciones:
+Debes diseñar una clase llamada `Persona` que pueda correr, descansar, cumplir años y permita conocer
+si está cansada o no.
 
-*   Al momento de crear un objeto persona debo poder especificar su nombre (String), edad (int) 
-y género (char).
-*   Esta clase permite exponer los posibles valores para el genero (Hombre M o Mujer F). 
-*   En cualquier momento yo quiero poder saber su nombre, edad o género.
-*   Correr:  
-    *   Antes de correr se debe verificar si se tiene la ropa adecuada, en caso de ser así, si puede correr.
-    *   En caso de poder correr antes se debe calentar, para evitar cualquier problema muscular.
-*   Descansar: 
-    *   Antes de descansar se debe calcular el tiempo de descanso para ello utilizamos el siguiente código:
+## Requisitos
 
-```
-Random aleatorio = new Random(System.currentTimeMillis());
-return aleatorio.nextInt(60) + 1;
-```
+- Al crear una persona se debe poder indicar su nombre (`String`), su edad (`int`) y su género
+  (`char`).
+- La clase expone los posibles valores de género: hombre (`M`) y mujer (`F`).
+- En cualquier momento se debe poder consultar el nombre, la edad y el género.
+- **Correr**
+  - Antes de correr se comprueba si se tiene la ropa adecuada; si la tiene, puede correr.
+  - Si puede correr, primero debe calentar para evitar problemas musculares.
+- **Descansar**
+  - Antes de descansar se calcula el tiempo de descanso con este código:
 
-*   Luego se procede a descansar por el tiempo de descanso.
-*   Cumplir Años: Debe aumentar en 1 la edad (edad++).
+    ```java
+    Random aleatorio = new Random(System.currentTimeMillis());
+    return aleatorio.nextInt(60) + 1;
+    ```
 
-Al terminar de implementar, sonar nos dice que tenemos números mágicos por lo que debemos llevar a 
-constantes los números 60 y 1 de la fórmula. Para esto tenga en cuenta que el 60 representa los 
-minutos de una hora y el 1 la cantidad de minutos mínimo que se desea descansar.
+  - Después se descansa durante ese tiempo.
+- **Cumplir años**
 
-## Nota:
-Te dejo una posible solución, pero mi consejo es que lo intentes primero.
+  Debe aumentar la edad en uno (`edad++`).
+
+## Reto extra
+
+Al terminar, «Sonar» avisa de que hay **números mágicos**: los números `60` y `1` de la fórmula deben
+pasar a constantes. Ten en cuenta que `60` son los minutos de una hora y `1` es la cantidad mínima de
+minutos que se desea descansar.
+
+## Solución
+
+[`persona`](./persona) contiene una posible solución. Conviene intentarlo primero.

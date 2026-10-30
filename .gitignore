@@ -36,3 +36,5 @@ hs_err_pid*
 # Eclipse
 .classpath
 .project
+# Archivo que genera el ejemplo de escritura
+texto.txt

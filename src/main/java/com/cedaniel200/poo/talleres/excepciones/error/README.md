@@ -1,17 +1,27 @@
 # Error
 
-Son condiciones excepcionales que son externas a la aplicación y de 
-las cuales la aplicación generalmente no puede anticipar o recuperar. 
-Los errores no están sujetos a los requisitos de captura o 
-especificación. Los errores son aquellas excepciones indicadas por 
-Error y sus subclases.
+## Qué es
+
+Son condiciones excepcionales externas a la aplicación, que esta generalmente no puede anticipar ni
+recuperar. Los errores **no** están sujetos al requisito de captura o especificación: son las
+excepciones indicadas por `Error` y sus subclases.
 
 ## Ejemplo
 
-La clase **Recursivo** contiene un método hacerRecursivamente, si te fijas bien
-no hay ningún error de sintaxis, el código esta perfecto para el
-compilador y para el IDE por lo cual no detecta posibles excepciones  o errores
-y no nos obliga a capturar o especificar una posible excepción, 
-pero si puede ocurrir que al trabajar con un método recursivo se desborde la pila
-de llamados lo que generaría un StackOverflowError, que es en realidad lo que 
-pasará si poner a ejecutar la clase Run.
+La clase **`Recursivo`** contiene un método `hacerRecursivamente`. Si te fijas bien, no hay ningún
+error de sintaxis: el código está perfecto para el compilador y para el IDE, que no detectan posibles
+excepciones y no obligan a capturar ni a especificar nada.
+
+Aun así, al trabajar con un método recursivo se puede desbordar la pila de llamadas y generar un
+`StackOverflowError`, que es justo lo que pasa si ejecutas la clase `Run`.
+
+## Para ejecutarlo
+
+```bash
+./gradlew build
+java -cp build/classes/java/main com.cedaniel200.poo.talleres.excepciones.error.Run
+```
+
+## Ver también
+
+[Volver a excepciones](../README.md)

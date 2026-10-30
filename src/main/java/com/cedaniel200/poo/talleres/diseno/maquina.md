@@ -1,23 +1,33 @@
-## Descripción
+# Máquinas
 
-Esta diseñando el nuevo software para una fabrica que se especializa 
-en maquinas de afeitar y en una maquina llamada pajarito, por lo que 
-debes tener en cuenta las siguientes consideraciones:
+## Objetivo
 
-*   La fabrica piensa extender su mercado a cualquier otro tipo de aparato,
-de los que se quiere conocer su descripción.
-*   Actualmente las maquinas que fabrican tienen los siguientes comportamientos:
-    *   prenden.
-    *   apagan.
-    *   ejecutan el mantenimiento (debe indicar si se ejecuto correctamente).
-    *   Conocer las piezas que componen la maquina.
-    *   Deben permitir conocer la ultima alerta.
-*   Las maquinas que fabrica la empresa prenden y apagan todas del mismo modo.
-*   Las maquinas pajarito por diseño deben apagar diferente.
-*   Por ultimo se debe aclarar que cada pieza debe poder suministrar su nombre,
-el material del cual esta hecha y el modo en que se instala.
+Diseñar una jerarquía de clases donde algunas operaciones se comparten y otras se sobrescriben.
 
-Al finalizar el diseño intenta implementar la maquina Taladro.
+## Enunciado
 
-## Nota:
-Te dejo una posible solución, pero mi consejo es que lo intentes primero.
+Estás diseñando el nuevo software para una fábrica especializada en máquinas de afeitar y en una
+máquina llamada «pajarito». Debes tener en cuenta las siguientes consideraciones.
+
+## Requisitos
+
+- La fábrica piensa extender su mercado a cualquier otro tipo de aparato, del que se quiere conocer su
+  descripción.
+- Actualmente las máquinas que fabrican tienen estos comportamientos:
+  - Prenderse.
+  - Apagarse.
+  - Ejecutar el mantenimiento (indicando si se ejecutó correctamente).
+  - Conocer las piezas que componen la máquina.
+  - Conocer la última alerta.
+- Las máquinas que fabrica la empresa prenden y apagan todas del mismo modo.
+- Las máquinas «pajarito», por diseño, deben apagarse de forma diferente.
+- Cada pieza debe poder suministrar su nombre, el material del que está hecha y el modo en que se
+  instala.
+
+## Entregable
+
+Al finalizar el diseño, implementa la máquina «taladro».
+
+## Solución
+
+[`maquina`](./maquina) contiene una posible solución. Conviene intentarlo primero.
